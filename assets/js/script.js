@@ -31,7 +31,7 @@ function preecheCampos(dados) {
 
 function criaHabilidades(listaHabilidades) {
   let habilidades = document.querySelector("#pokeHabilidades");
-
+  habilidades.innerHTML = '';
   for (i = 0; i < listaHabilidades.length; i += 5) {
     const row = document.createElement("div");
     row.classList.add("row");
@@ -52,7 +52,7 @@ function criaHabilidades(listaHabilidades) {
 
 function seEncontraEm(encontros) {
   const listaDeLocais = document.querySelector("#pokeLocal");
-
+  listaDeLocais.innerHTML = "";
   for (i = 0; i < encontros.length; i += 3) {
     const row = document.createElement("div");
     row.classList.add("row");
